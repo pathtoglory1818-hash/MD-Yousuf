@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0d9488">
+    <title>Dr. MD Yousuf | Dental Care Clinic - Ratua (732205)</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter & Hind Siliguri for Bengali/Hindi support -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Hind Siliguri', 'sans-serif'],
+                    },
+                    colors: {
+                        dental: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Android & Mobile Touch Optimizations */
+        * {
+            -webkit-tap-highlight-color: transparent;
+        }
+        body {
+            padding-bottom: 76px; /* Space for mobile sticky bottom bar */
+        }
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 0;
+            }
+        }
+        .pulse-ring {
+            animation: pulse-ring 2s infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+        /* Custom scrollbar for horizontal pill lists on mobile */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Rich Premium Gradients & Glassmorphism */
+        .mesh-bg {
+            background-color: #f0fdfa;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(13, 148, 136, 0.16) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(56, 189, 248, 0.16) 0px, transparent 50%),
+                radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.12) 0px, transparent 50%);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #042f2e 0%, #0f766e 50%, #0369a1 100%);
+        }
+        .card-gradient-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-gradient-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(13, 148, 136, 0.15), 0 8px 10px -6px rgba(13, 148, 136, 0.1);
+        }
+    </style>
+</head>
+<body class="mesh-bg text-slate-800 font-sans antialiased selection:bg-dental-600 selection:text-white">
+
+    <!-- Top Emergency / Location Info Bar -->
+    <div class="bg-dental-900 text-white text-xs sm:text-sm py-2 px-4">
+        <div class="max-w-6xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-2">
+                <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 pulse-ring"></span>
+                <span data-i18n="top_location" class="font-medium">Ratua, Malda, WB - PIN: 732205</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <!-- Language Switcher for Local Accessibility -->
+                <div class="flex items-center bg-dental-800 rounded-lg p-0.5 border border-dental-700">
+                    <button onclick="setLanguage('en')" id="lang-en" class="px-2 py-0.5 rounded-md text-xs font-semibold bg-white text-dental-900 transition">EN</button>
+                    <button onclick="setLanguage('bn')" id="lang-bn" class="px-2 py-0.5 rounded-md text-xs font-semibold text-teal-100 hover:text-white transition">বাংলা</button>
+                    <button onclick="setLanguage('hi')" id="lang-hi" class="px-2 py-0.5 rounded-md text-xs font-semibold text-teal-100 hover:text-white transition">हिंदी</button>
+                </div>
+                <a href="tel:+918910364043" class="hidden sm:inline-flex items-center font-semibold text-teal-200 hover:text-white">
+                    <i class="fa-solid fa-phone-volume mr-1.5"></i> +91 89103 64043
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Navigation Header -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-dental-500 to-dental-700 flex items-center justify-center text-white shadow-md shadow-dental-500/20">
+                    <i class="fa-solid fa-tooth text-xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight leading-none">Dr. MD Yousuf</h1>
+                    <p data-i18n="clinic_subtitle" class="text-xs text-dental-600 font-semibold mt-0.5">Ratua Dental Care • 732205</p>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
+                <a href="#services" data-i18n="nav_services" class="hover:text-dental-600 transition">Treatments</a>
+                <a href="#about" data-i18n="nav_about" class="hover:text-dental-600 transition">About Doctor</a>
+                <a href="#estimator" data-i18n="nav_estimator" class="hover:text-dental-600 transition">Symptom Guide</a>
+                <a href="#booking" data-i18n="nav_book" class="hover:text-dental-600 transition">Book Visit</a>
+                <a href="#location" data-i18n="nav_location" class="hover:text-dental-600 transition">Location</a>
+            </nav>
+
+            <!-- Action Buttons (Desktop + Mobile Header CTA) -->
+            <div class="flex items-center space-x-2">
+                <a href="tel:+918910364043" class="inline-flex items-center justify-center px-3.5 py-2 rounded-xl bg-dental-50 text-dental-700 font-bold text-sm hover:bg-dental-100 active:scale-95 transition">
+                    <i class="fa-solid fa-phone mr-1.5 text-dental-600"></i>
+                    <span class="hidden sm:inline">89103 64043</span>
+                    <span class="sm:hidden" data-i18n="call_btn">Call</span>
+                </a>
+                <button onclick="toggleMobileMenu()" aria-label="Open Menu" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center active:scale-95 transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Slide-Down Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-2 pb-4 space-y-2 shadow-lg">
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2.5 px-3 rounded-xl font-semibold text-slate-700 hover:bg-dental-50 hover:text-dental-700">
+                <i class="fa-solid fa-teeth-open w-6 text-dental-600"></i> <span data-i18n="nav_services">Treatments & Services</span>
+            </a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2.5 px-3 rounded-xl font-semibold text-slate-700 hover:bg-dental-50 hover:text-dental-700">
+                <i class="fa-solid fa-user-doctor w-6 text-dental-600"></i> <span data-i18n="nav_about">About Dr. MD Yousuf</span>
+            </a>
+            <a href="#estimator" onclick="toggleMobileMenu()" class="block py-2.5 px-3 rounded-xl font-semibold text-slate-700 hover:bg-dental-50 hover:text-dental-700">
+                <i class="fa-solid fa-stethoscope w-6 text-dental-600"></i> <span data-i18n="nav_estimator">Tooth Pain Checker</span>
+            </a>
+            <a href="#booking" onclick="toggleMobileMenu()" class="block py-2.5 px-3 rounded-xl font-semibold text-slate-700 hover:bg-dental-50 hover:text-dental-700">
+                <i class="fa-solid fa-calendar-check w-6 text-dental-600"></i> <span data-i18n="nav_book">Book Appointment</span>
+            </a>
+            <a href="#location" onclick="toggleMobileMenu()" class="block py-2.5 px-3 rounded-xl font-semibold text-slate-700 hover:bg-dental-50 hover:text-dental-700">
+                <i class="fa-solid fa-location-dot w-6 text-dental-600"></i> <span data-i18n="nav_location">Clinic Location (Ratua 732205)</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section (Rich Gradient & High-Impact Clinical Photography) -->
+    <section class="relative hero-gradient text-white pt-8 pb-14 md:py-20 overflow-hidden">
+        <!-- Decorative Ambient Glow Orbs -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-teal-400/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-24 w-96 h-96 bg-sky-400/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-12 gap-8 lg:gap-10 items-center">
+                
+                <!-- Left Column: Content -->
+                <div class="md:col-span-7 space-y-5">
+                    <!-- Clinic Status Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full shadow-sm">
+                        <span id="clinic-status-dot" class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                        <span id="clinic-status-text" class="text-xs font-bold text-teal-50 tracking-wide uppercase">Open Today in Ratua • 9:00 AM - 8:00 PM</span>
+                    </div>
+
+                    <h2 data-i18n="hero_title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight drop-shadow-sm">
+                        Gentle, Modern & Affordable Dental Care in <span class="text-teal-300 underline decoration-teal-400/50 decoration-4 underline-offset-4">Ratua</span>
+                    </h2>
+
+                    <p data-i18n="hero_desc" class="text-base sm:text-lg text-teal-50/90 leading-relaxed">
+                        Consult <strong>Dr. MD Yousuf</strong> for painless tooth extractions, root canal treatments (RCT), ultrasonic teeth cleaning, Zirconia crowns, and complete family dental care right in the heart of Ratua (PIN: 732205).
+                    </p>
+
+                    <!-- Primary Mobile-Friendly CTA Buttons -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2">
+                        <a href="tel:+918910364043" class="flex items-center justify-center space-x-3 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold py-4 px-6 rounded-2xl shadow-xl shadow-amber-500/25 active:scale-95 transition text-base">
+                            <i class="fa-solid fa-phone-volume text-lg"></i>
+                            <span data-i18n="cta_call_now">Call: 89103 64043</span>
+                        </a>
+                        <a href="#booking" class="flex items-center justify-center space-x-3 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-bold py-4 px-6 rounded-2xl shadow-xl shadow-emerald-900/30 border border-white/20 active:scale-95 transition text-base">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span data-i18n="cta_whatsapp">Book on WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Highlights with Glassmorphism -->
+                    <div class="grid grid-cols-3 gap-2.5 sm:gap-4 pt-4">
+                        <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/15 text-center sm:text-left">
+                            <div class="text-teal-300 font-extrabold text-lg sm:text-2xl">100%</div>
+                            <div data-i18n="stat_hygiene" class="text-xs text-teal-100 font-medium">Sterilized Clinic</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/15 text-center sm:text-left">
+                            <div class="text-amber-300 font-extrabold text-lg sm:text-2xl">4.9 ★</div>
+                            <div data-i18n="stat_painless" class="text-xs text-teal-100 font-medium">Painless Care</div>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-3.5 rounded-2xl border border-white/15 text-center sm:text-left">
+                            <div class="text-sky-300 font-extrabold text-lg sm:text-2xl">732205</div>
+                            <div data-i18n="stat_local" class="text-xs text-teal-100 font-medium">Ratua Center</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Professional Doctor & Clinic Visual Showcase Card -->
+                <div class="md:col-span-5">
+                    <div class="bg-white text-slate-800 rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+                        <!-- Clinic Banner Image with Gradient Overlay -->
+                        <div class="relative h-48 sm:h-52 w-full overflow-hidden">
+                            <img 
+                                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" 
+                                onerror="this.src='https://placehold.co/800x450/0d9488/ffffff?text=Dr.+MD+Yousuf+Dental+Clinic'"
+                                alt="Modern Dental Clinic Setup in Ratua" 
+                                class="w-full h-full object-cover"
+                            >
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-900/40 to-transparent"></div>
+                            
+                            <!-- Verified Badge Top Right -->
+                            <div class="absolute top-3 right-3 bg-emerald-500/95 backdrop-blur-md text-white text-xs font-bold px-3 py-1 rounded-full shadow flex items-center space-x-1">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>ISO Standard Hygiene</span>
+                            </div>
+
+                            <!-- Doctor Name Overlay on Photo -->
+                            <div class="absolute bottom-3 left-4 right-4 flex items-end justify-between text-white">
+                                <div>
+                                    <span class="px-2.5 py-0.5 bg-teal-500/90 text-white font-bold text-[11px] rounded-md uppercase tracking-wider">
+                                        Chief Dental Surgeon
+                                    </span>
+                                    <h3 class="text-2xl font-extrabold mt-1 leading-tight">Dr. MD Yousuf</h3>
+                                    <p data-i18n="doc_subtitle" class="text-xs text-teal-200 font-medium">Family & Cosmetic Dentist • Ratua</p>
+                                </div>
+                                <div class="w-14 h-14 rounded-2xl bg-white p-1 shadow-lg shrink-0">
+                                    <img 
+                                        src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=300&q=80" 
+                                        onerror="this.src='https://placehold.co/150x150/0f766e/ffffff?text=Dr'"
+                                        alt="Dr. MD Yousuf" 
+                                        class="w-full h-full object-cover rounded-xl"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Direct Contact Details Inside Card -->
+                        <div class="p-5 sm:p-6">
+                            <div class="space-y-3 text-left bg-gradient-to-br from-slate-50 to-teal-50/40 p-4 rounded-2xl border border-teal-100">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-dental-500 to-dental-700 text-white flex items-center justify-center shrink-0 shadow-sm">
+                                        <i class="fa-solid fa-location-dot text-sm"></i>
+                                    </div>
+                                    <div class="text-xs sm:text-sm">
+                                        <p class="font-bold text-slate-900">Ratua Main Market Area</p>
+                                        <p class="text-slate-500">Dist: Malda, West Bengal, PIN - 732205</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                                        <i class="fa-solid fa-phone text-sm"></i>
+                                    </div>
+                                    <div class="text-xs sm:text-sm">
+                                        <p class="font-bold text-slate-900">+91 89103 64043</p>
+                                        <p class="text-slate-500">Direct Appointment & Emergency Line</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-amber-500 to-orange-500 text-white flex items-center justify-center shrink-0 shadow-sm">
+                                        <i class="fa-solid fa-clock text-sm"></i>
+                                    </div>
+                                    <div class="text-xs sm:text-sm">
+                                        <p class="font-bold text-slate-900">Mon – Sun: 9:00 AM – 8:00 PM</p>
+                                        <p class="text-slate-500">Same-Day Pain Relief Available</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Save Contact vCard Button for Android Users -->
+                            <button onclick="downloadVCard()" class="w-full mt-4 py-3 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs sm:text-sm flex items-center justify-center space-x-2 active:scale-95 transition shadow-md">
+                                <i class="fa-solid fa-address-book text-teal-400"></i>
+                                <span data-i18n="save_contact">Save Doctor's Number to Phone</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Symptom & Treatment Guide (Great for Mobile Users) -->
+    <section id="estimator" class="py-10 bg-white border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-dental-600 bg-dental-50 px-3 py-1 rounded-full">Quick Self-Check</span>
+                <h3 data-i18n="symptom_title" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">What Dental Problem Are You Facing?</h3>
+                <p data-i18n="symptom_sub" class="text-sm text-slate-500 mt-1">Tap on your symptom below to see how Dr. MD Yousuf can help you today.</p>
+            </div>
+
+            <!-- Horizontal Scrollable Pills on Mobile -->
+            <div class="flex overflow-x-auto no-scrollbar gap-2.5 pb-3 sm:justify-center">
+                <button onclick="selectSymptom('pain')" id="sym-pain" class="symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-dental-600 text-white shadow-sm transition flex items-center space-x-2">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Severe Toothache</span>
+                </button>
+                <button onclick="selectSymptom('cavity')" id="sym-cavity" class="symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-tooth"></i>
+                    <span>Black Spot / Cavity</span>
+                </button>
+                <button onclick="selectSymptom('bleeding')" id="sym-bleeding" class="symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Bleeding Gums / Yellow Teeth</span>
+                </button>
+                <button onclick="selectSymptom('missing')" id="sym-missing" class="symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <span>Missing / Broken Tooth</span>
+                </button>
+                <button onclick="selectSymptom('wisdom')" id="sym-wisdom" class="symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-Kit-medical"></i>
+                    <span>Swollen Jaw / Wisdom Tooth</span>
+                </button>
+            </div>
+
+            <!-- Dynamic Recommendation Box -->
+            <div id="symptom-result" class="mt-4 bg-gradient-to-r from-teal-900 via-dental-800 to-slate-900 text-white rounded-3xl p-5 sm:p-7 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+                <div class="space-y-1.5">
+                    <div class="inline-flex items-center space-x-2 text-xs font-bold text-teal-300 uppercase">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span id="sym-rec-tag">Recommended Treatment</span>
+                    </div>
+                    <h4 id="sym-rec-title" class="text-xl font-extrabold text-white">Root Canal Treatment (RCT) or Pain Relief</h4>
+                    <p id="sym-rec-desc" class="text-sm text-teal-100 leading-relaxed">Sharp or throbbing pain when drinking hot/cold water or at night usually means deep decay. Dr. MD Yousuf performs painless Root Canal Treatment to save your natural tooth and stop pain immediately.</p>
+                    <p id="sym-rec-time" class="text-xs font-semibold text-amber-300 pt-1"><i class="fa-regular fa-clock mr-1"></i> Typical Visit Time: 30 – 45 Mins</p>
+                </div>
+                <button onclick="prefillBooking('Severe Toothache / RCT Consultation')" id="sym-rec-btn" class="w-full sm:w-auto shrink-0 bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-slate-950 font-extrabold px-6 py-4 rounded-2xl shadow-lg active:scale-95 transition text-sm text-center">
+                    Book For This Issue <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comprehensive Dental Services Grid with Clinical Photography -->
+    <section id="services" class="py-12 sm:py-16 max-w-6xl mx-auto px-4">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <span class="text-xs font-bold uppercase tracking-wider text-white bg-gradient-to-r from-dental-600 to-sky-600 px-3.5 py-1 rounded-full shadow-sm">Advanced Dental Treatments</span>
+            <h3 data-i18n="services_heading" class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3">Complete Dental Care Under One Roof</h3>
+            <p class="text-sm sm:text-base text-slate-600 mt-2">Equipped with modern dental chairs and digital diagnostics for patients in Ratua (732205) and surrounding Malda villages.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Service Card 1 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/0d9488/ffffff?text=Root+Canal+Care'" alt="Painless Root Canal" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-dental-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Most Popular</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Painless Root Canal (RCT)</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Save infected or deeply decayed teeth without pain using advanced rotary endodontics and local anesthesia.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Root Canal Treatment (RCT)')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/0284c7/ffffff?text=Teeth+Whitening+%26+Cleaning'" alt="Teeth Cleaning and Scaling" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-sky-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Bright Smile</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Ultrasonic Scaling & Polishing</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Remove stubborn tartar, plaque, gutkha/pan stains, bad breath, and bleeding gums for a bright, healthy smile.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Teeth Cleaning & Scaling')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/0f766e/ffffff?text=Zirconia+Crowns+%26+Caps'" alt="Dental Crowns and Bridges" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Long Lasting</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Dental Crowns, Caps & Bridges</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">High-strength Zirconia, Ceramic, and Metal-Ceramic caps to restore broken or missing teeth naturally.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Dental Crown / Tooth Cap')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Card 4 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/d97706/ffffff?text=Safe+Tooth+Extraction'" alt="Safe Tooth Extraction" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-amber-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full shadow">100% Safe</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Painless Tooth Extraction</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Gentle and hygienic removal of mobile teeth, severely damaged roots, and painful wisdom teeth.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Painless Tooth Extraction')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Card 5 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/7c3aed/ffffff?text=Cosmetic+Fillings'" alt="Tooth Colored Fillings" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Natural Look</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Tooth-Colored Fillings</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Cosmetic composite fillings that match your natural tooth shade to repair cavities and chipped front teeth.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Cavity Filling')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Service Card 6 -->
+            <div class="bg-white rounded-3xl overflow-hidden shadow-md border border-slate-100 card-gradient-hover flex flex-col justify-between">
+                <div>
+                    <div class="relative h-44 w-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/e11d48/ffffff?text=Family+Dentistry'" alt="Kids and Senior Dentistry" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/75 via-transparent to-transparent"></div>
+                        <span class="absolute bottom-3 left-4 bg-rose-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">All Ages</span>
+                    </div>
+                    <div class="p-6 pb-2">
+                        <h4 class="text-lg font-extrabold text-slate-900">Braces, Kids & Senior Dentures</h4>
+                        <p class="text-sm text-slate-600 mt-2 leading-relaxed">Friendly care for children's teeth, orthodontic braces, and comfortable Complete & Partial Dentures for elders.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-3">
+                    <button onclick="prefillBooking('Dentures / Kids Dental Checkup')" class="w-full py-3 rounded-xl bg-gradient-to-r from-dental-600 to-teal-600 hover:from-dental-700 hover:to-teal-700 text-white font-bold text-xs uppercase tracking-wider shadow-sm transition">
+                        Select & Book <i class="fa-solid fa-chevron-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Gallery & Hygiene Standards Showcase -->
+    <section class="py-10 max-w-6xl mx-auto px-4">
+        <div class="bg-gradient-to-r from-teal-900 via-dental-800 to-sky-900 rounded-3xl p-6 sm:p-10 text-white shadow-xl">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider bg-white/15 text-teal-200 px-3 py-1 rounded-full">Inside Our Clinic</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold mt-2">Modern Equipment & Clean Environment</h3>
+                </div>
+                <p class="text-xs sm:text-sm text-teal-100 max-w-md">
+                    We follow strict hospital-grade sterilization in Ratua (732205) so you and your family receive safe, world-class dental treatment.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div class="relative h-52 rounded-2xl overflow-hidden group border border-white/15">
+                    <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/0f766e/ffffff?text=Modern+Dental+Chair'" alt="Automated Dental Chair" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                        <div>
+                            <h5 class="font-bold text-sm">Advanced Dental Operatory</h5>
+                            <p class="text-xs text-teal-200">Ergonomic chair & LED precision lighting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative h-52 rounded-2xl overflow-hidden group border border-white/15">
+                    <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/0369a1/ffffff?text=Sterilized+Instruments'" alt="Autoclave Sterilization" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                        <div>
+                            <h5 class="font-bold text-sm">100% Autoclaved Instruments</h5>
+                            <p class="text-xs text-teal-200">Sealed & sanitized pouches for every patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative h-52 rounded-2xl overflow-hidden group border border-white/15">
+                    <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=600&q=80" onerror="this.src='https://placehold.co/600x400/047857/ffffff?text=Digital+Diagnostics'" alt="Digital Dental Care" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-4">
+                        <div>
+                            <h5 class="font-bold text-sm">Precision Diagnostics</h5>
+                            <p class="text-xs text-teal-200">Accurate root canal & cavity detection</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Dr. MD Yousuf Banner -->
+    <section id="about" class="py-12 bg-dental-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+                <div class="md:col-span-7 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider bg-dental-800 text-teal-300 px-3 py-1 rounded-full border border-dental-700">Trusted Local Healthcare</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight">Why Patients Across Ratua (732205) Trust Dr. MD Yousuf</h3>
+                    <p class="text-teal-100 text-sm sm:text-base leading-relaxed">
+                        You no longer need to travel far for quality dental procedures. Our clinic in Ratua combines strict sterilization protocols, modern instruments, and honest, affordable pricing tailored for families in Ratua, Samsi, Chanchal, and Malda.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <div class="flex items-start space-x-3 bg-dental-800/60 p-3.5 rounded-2xl border border-dental-700/60">
+                            <i class="fa-solid fa-check-double text-emerald-400 mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">Strict Sterilization</h5>
+                                <p class="text-xs text-teal-200">Autoclaved & sealed instruments for every patient.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-dental-800/60 p-3.5 rounded-2xl border border-dental-700/60">
+                            <i class="fa-solid fa-indian-rupee-sign text-emerald-400 mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">Transparent Fees</h5>
+                                <p class="text-xs text-teal-200">Clear explanation of treatment options & costs upfront.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-dental-800/60 p-3.5 rounded-2xl border border-dental-700/60">
+                            <i class="fa-solid fa-bolt-lightning text-emerald-400 mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">Fast Pain Relief</h5>
+                                <p class="text-xs text-teal-200">Priority slots for acute toothache and swelling.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3 bg-dental-800/60 p-3.5 rounded-2xl border border-dental-700/60">
+                            <i class="fa-solid fa-comments text-emerald-400 mt-1"></i>
+                            <div>
+                                <h5 class="font-bold text-sm">Friendly Guidance</h5>
+                                <p class="text-xs text-teal-200">Consult in Bengali, Hindi, or English comfortably.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emergency Callout Card -->
+                <div class="md:col-span-5">
+                    <div class="bg-white text-slate-900 rounded-3xl p-6 shadow-xl">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-rose-100 text-rose-600 flex items-center justify-center text-xl">
+                                <i class="fa-solid fa-truck-medical"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-extrabold text-lg">Dental Emergency?</h4>
+                                <p class="text-xs text-slate-500">Unbearable pain, bleeding, or dental trauma</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-600 mb-5">
+                            Don't self-medicate with random painkillers. Call Dr. MD Yousuf directly for immediate advice and priority clinic checkup in Ratua.
+                        </p>
+                        <a href="tel:+918910364043" class="w-full py-4 px-5 rounded-2xl bg-rose-600 hover:bg-rose-700 text-white font-bold flex items-center justify-center space-x-2 shadow-lg shadow-rose-600/25 active:scale-95 transition">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <span>Emergency Call: 89103 64043</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instant Appointment Booking (WhatsApp & SMS Integrated for Android) -->
+    <section id="booking" class="py-12 sm:py-16 max-w-5xl mx-auto px-4">
+        <div class="bg-white rounded-3xl shadow-xl shadow-slate-200/60 border border-slate-100 overflow-hidden">
+            <div class="grid md:grid-cols-12">
+                
+                <!-- Form Side -->
+                <div class="md:col-span-7 p-6 sm:p-8">
+                    <span class="text-xs font-bold uppercase tracking-wider text-dental-600 bg-dental-50 px-3 py-1 rounded-full">Zero Waiting Time</span>
+                    <h3 data-i18n="book_heading" class="text-2xl font-extrabold text-slate-900 mt-2">Book Your Appointment</h3>
+                    <p class="text-xs sm:text-sm text-slate-500 mt-1">Fill out the details below to send your appointment request directly to Dr. MD Yousuf's phone (8910364043).</p>
+
+                    <form id="appointment-form" onsubmit="handleAppointmentSubmit(event)" class="mt-6 space-y-4">
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="patient-name">Patient Full Name *</label>
+                            <input type="text" id="patient-name" required placeholder="Enter your name" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="patient-phone">Your Phone Number *</label>
+                                <input type="tel" id="patient-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="patient-village">Village / Area (Near Ratua)</label>
+                                <input type="text" id="patient-village" placeholder="e.g., Ratua, Samsi, Baharal" value="Ratua (732205)" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="visit-date">Preferred Date *</label>
+                                <input type="date" id="visit-date" required class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="visit-time">Preferred Time Slot *</label>
+                                <select id="visit-time" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                                    <option value="Morning (9:00 AM - 12:00 PM)">Morning (9:00 AM - 12:00 PM)</option>
+                                    <option value="Afternoon (12:00 PM - 4:00 PM)">Afternoon (12:00 PM - 4:00 PM)</option>
+                                    <option value="Evening (4:00 PM - 8:00 PM)">Evening (4:00 PM - 8:00 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-600 mb-1.5" for="treatment-type">Dental Issue / Treatment</label>
+                            <select id="treatment-type" class="w-full px-4 py-3.5 rounded-xl bg-slate-50 border border-slate-200 focus:border-dental-600 focus:bg-white focus:outline-none text-sm font-medium">
+                                <option value="General Dental Checkup">General Dental Checkup</option>
+                                <option value="Severe Toothache / RCT Consultation">Severe Toothache / RCT Consultation</option>
+                                <option value="Root Canal Treatment (RCT)">Root Canal Treatment (RCT)</option>
+                                <option value="Teeth Cleaning & Scaling">Teeth Cleaning & Scaling</option>
+                                <option value="Painless Tooth Extraction">Painless Tooth Extraction</option>
+                                <option value="Dental Crown / Tooth Cap">Dental Crown / Tooth Cap</option>
+                                <option value="Cavity Filling">Cavity Filling</option>
+                                <option value="Dentures / Kids Dental Checkup">Dentures / Kids Dental Checkup</option>
+                            </select>
+                        </div>
+
+                        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                            <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-4 px-5 rounded-2xl shadow-lg shadow-emerald-600/20 flex items-center justify-center space-x-2 active:scale-95 transition text-sm">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Send via WhatsApp</span>
+                            </button>
+                            <button type="button" onclick="sendViaSMS()" class="sm:w-auto bg-slate-800 hover:bg-slate-900 text-white font-bold py-4 px-5 rounded-2xl flex items-center justify-center space-x-2 active:scale-95 transition text-sm">
+                                <i class="fa-solid fa-comment-sms"></i>
+                                <span>Send via SMS</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Clinic Timings & Info Side -->
+                <div class="md:col-span-5 bg-slate-900 text-white p-6 sm:p-8 flex flex-col justify-between">
+                    <div>
+                        <h4 class="text-lg font-extrabold text-teal-400">Clinic Visiting Hours</h4>
+                        <p class="text-xs text-slate-400 mt-1">Walk-in and prior phone appointments welcome.</p>
+
+                        <ul class="mt-5 space-y-3 text-sm">
+                            <li class="flex justify-between py-2 border-b border-slate-800">
+                                <span class="text-slate-300">Monday – Thursday</span>
+                                <span class="font-bold text-white">9:00 AM – 8:00 PM</span>
+                            </li>
+                            <li class="flex justify-between py-2 border-b border-slate-800">
+                                <span class="text-slate-300">Friday</span>
+                                <span class="font-bold text-teal-300">9:00 AM – 12:30 PM<br>2:30 PM – 8:00 PM</span>
+                            </li>
+                            <li class="flex justify-between py-2 border-b border-slate-800">
+                                <span class="text-slate-300">Saturday – Sunday</span>
+                                <span class="font-bold text-white">9:00 AM – 8:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-8 bg-slate-800/90 p-4 rounded-2xl border border-slate-700">
+                        <p class="text-xs text-slate-300 font-medium">Direct Phone Line:</p>
+                        <a href="tel:+918910364043" class="text-xl font-extrabold text-teal-400 hover:underline block mt-0.5">+91 89103 64043</a>
+                        <div class="mt-3 flex items-center justify-between">
+                            <span class="text-xs text-slate-400">PIN Code: 732205 (Ratua)</span>
+                            <button onclick="copyPhoneNumber()" class="text-xs bg-slate-700 hover:bg-slate-600 text-white px-2.5 py-1 rounded-lg font-semibold transition">
+                                <i class="fa-regular fa-copy mr-1"></i> Copy No.
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Map Section (Ratua 732205) -->
+    <section id="location" class="py-10 max-w-6xl mx-auto px-4">
+        <div class="bg-white rounded-3xl p-5 sm:p-8 shadow-sm border border-slate-100">
+            <div class="grid md:grid-cols-12 gap-6 items-center">
+                <div class="md:col-span-5 space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-wider text-dental-600 bg-dental-50 px-3 py-1 rounded-full">Easy To Reach</span>
+                    <h3 class="text-2xl font-extrabold text-slate-900">Find Us in Ratua (732205)</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Conveniently located in Ratua for patients coming from Ratua Bazar, Bhado, Debipur, Samsi, Kahala, and across Malda district.
+                    </p>
+
+                    <div class="space-y-3 pt-1">
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-map-pin text-dental-600 mt-1"></i>
+                            <div class="text-sm">
+                                <strong class="text-slate-900 block">Dr. MD Yousuf Dental Clinic</strong>
+                                <span class="text-slate-600">Ratua, Post Office: Ratua, District: Malda, West Bengal – 732205</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fa-solid fa-phone text-dental-600 mt-1"></i>
+                            <div class="text-sm">
+                                <strong class="text-slate-900 block">Phone / WhatsApp</strong>
+                                <a href="tel:+918910364043" class="text-dental-600 font-bold">+91 89103 64043</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 flex flex-wrap gap-3">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ratua+732205+Malda+West+Bengal" target="_blank" rel="noopener noreferrer" class="flex-1 text-center bg-dental-600 hover:bg-dental-700 text-white font-bold py-3.5 px-4 rounded-xl text-sm shadow-sm active:scale-95 transition">
+                            <i class="fa-solid fa-diamond-turn-right mr-1.5"></i> Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Embedded Map for Ratua 732205 -->
+                <div class="md:col-span-7">
+                    <div class="w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 relative">
+                        <iframe 
+                            title="Dr. MD Yousuf Clinic Location Ratua 732205"
+                            src="https://www.google.com/maps?q=Ratua+732205+West+Bengal&output=embed" 
+                            class="w-full h-full border-0" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+            <div>
+                <div class="flex items-center justify-center sm:justify-start space-x-2 text-white font-extrabold text-lg">
+                    <i class="fa-solid fa-tooth text-dental-500"></i>
+                    <span>Dr. MD Yousuf Dental Clinic</span>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">Ratua, Malda, West Bengal • PIN Code: 732205 • Phone: +91 89103 64043</p>
+            </div>
+            <div class="text-xs text-slate-500">
+                © <span id="year"></span> Dr. MD Yousuf. Designed for Mobile & Android accessibility.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Toast Notification Box (No alert() used) -->
+    <div id="toast-box" class="fixed top-16 left-1/2 -translate-x-1/2 z-50 hidden bg-slate-900 text-white px-5 py-3 rounded-2xl shadow-xl border border-slate-700 text-xs sm:text-sm font-semibold items-center space-x-2.5">
+        <i class="fa-solid fa-circle-check text-emerald-400 text-base"></i>
+        <span id="toast-message">Action completed!</span>
+    </div>
+
+    <!-- ANDROID / PHONE STICKY BOTTOM ACTION BAR -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2 shadow-[0_-4px_15px_rgba(0,0,0,0.06)]">
+        <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+            <!-- Direct Call Button -->
+            <a href="tel:+918910364043" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-dental-600 text-white font-bold active:scale-95 transition shadow-sm">
+                <i class="fa-solid fa-phone text-base mb-0.5"></i>
+                <span class="text-[11px] leading-tight" data-i18n="bottom_call">Call Doctor</span>
+            </a>
+
+            <!-- Direct WhatsApp Chat -->
+            <a href="https://wa.me/918910364043?text=Hello%20Dr.%20MD%20Yousuf,%20I%20would%20like%20to%20book%20a%20dental%20checkup%20in%20Ratua%20(732205)." target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-emerald-600 text-white font-bold active:scale-95 transition shadow-sm">
+                <i class="fa-brands fa-whatsapp text-base mb-0.5"></i>
+                <span class="text-[11px] leading-tight">WhatsApp</span>
+            </a>
+
+            <!-- Quick Map Direction -->
+            <a href="#location" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-slate-100 text-slate-800 font-bold active:scale-95 transition">
+                <i class="fa-solid fa-location-dot text-base text-dental-600 mb-0.5"></i>
+                <span class="text-[11px] leading-tight" data-i18n="bottom_map">Ratua 732205</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        // Set default date to today and current year
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('year').textContent = new Date().getFullYear();
+            const dateInput = document.getElementById('visit-date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.value = today;
+                dateInput.min = today;
+            }
+            updateClinicLiveStatus();
+        });
+
+        // Toggle Mobile Hamburger Menu
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            menu.classList.toggle('hidden');
+            if (menu.classList.contains('hidden')) {
+                icon.className = 'fa-solid fa-bars text-lg';
+            } else {
+                icon.className = 'fa-solid fa-xmark text-xl';
+            }
+        }
+
+        // Check Clinic Open Status based on IST hours (9 AM to 8 PM)
+        function updateClinicLiveStatus() {
+            const now = new Date();
+            const hour = now.getHours();
+            const dot = document.getElementById('clinic-status-dot');
+            const text = document.getElementById('clinic-status-text');
+
+            if (hour >= 9 && hour < 20) {
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-emerald-500 pulse-ring';
+                text.textContent = 'Open Now in Ratua • Closes at 8:00 PM';
+            } else {
+                dot.className = 'w-2.5 h-2.5 rounded-full bg-amber-500';
+                text.textContent = 'Clinic Opens at 9:00 AM • Call 8910364043 for Emergency';
+            }
+        }
+
+        // Interactive Symptom Checker Data
+        const symptomData = {
+            pain: {
+                title: "Root Canal Treatment (RCT) or Immediate Pain Relief",
+                desc: "Sharp or throbbing pain when drinking hot/cold water or at night usually means deep nerve inflammation. Dr. MD Yousuf performs painless Root Canal Treatment to save your natural tooth and stop pain immediately.",
+                time: "Typical Visit Time: 30 – 45 Mins",
+                bookingValue: "Severe Toothache / RCT Consultation"
+            },
+            cavity: {
+                title: "Tooth-Colored Cosmetic Filling",
+                desc: "Food getting stuck or black spots on teeth indicate cavities. Early composite filling stops decay from reaching the root and keeps your tooth strong for years.",
+                time: "Typical Visit Time: 20 – 30 Mins (Single Sitting)",
+                bookingValue: "Cavity Filling"
+            },
+            bleeding: {
+                title: "Ultrasonic Scaling & Gum Care",
+                desc: "Bleeding while brushing, swollen gums, yellow deposits, or bad breath are caused by hardened tartar. Ultrasonic cleaning gently removes plaque without hurting tooth enamel.",
+                time: "Typical Visit Time: 25 – 35 Mins",
+                bookingValue: "Teeth Cleaning & Scaling"
+            },
+            missing: {
+                title: "Zirconia / Ceramic Crown, Bridge or Denture",
+                desc: "Missing teeth make chewing difficult and shift nearby teeth. We provide natural-looking fixed bridges, caps, and comfortable dentures tailored to your bite.",
+                time: "Typical Visit Time: 2 Short Visits",
+                bookingValue: "Dental Crown / Tooth Cap"
+            },
+            wisdom: {
+                title: "Safe Wisdom Tooth & Swelling Care",
+                desc: "Pain at the back of your jaw or difficulty opening your mouth is common with wisdom teeth. Get safe medication and painless extraction if required.",
+                time: "Typical Visit Time: 20 – 40 Mins",
+                bookingValue: "Painless Tooth Extraction"
+            }
+        };
+
+        function selectSymptom(key) {
+            // Update button active styles
+            document.querySelectorAll('.symptom-btn').forEach(btn => {
+                btn.className = "symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center space-x-2";
+            });
+            const activeBtn = document.getElementById('sym-' + key);
+            if (activeBtn) {
+                activeBtn.className = "symptom-btn shrink-0 px-4 py-2.5 rounded-2xl font-bold text-sm bg-dental-600 text-white shadow-sm transition flex items-center space-x-2";
+            }
+
+            // Update recommendation card
+            const info = symptomData[key];
+            document.getElementById('sym-rec-title').textContent = info.title;
+            document.getElementById('sym-rec-desc').textContent = info.desc;
+            document.getElementById('sym-rec-time').innerHTML = `<i class="fa-regular fa-clock mr-1"></i> ${info.time}`;
+            document.getElementById('sym-rec-btn').setAttribute('onclick', `prefillBooking('${info.bookingValue}')`);
+        }
+
+        // Prefill Booking Form & Scroll Smoothly
+        function prefillBooking(treatmentName) {
+            const select = document.getElementById('treatment-type');
+            if (select) {
+                select.value = treatmentName;
+            }
+            document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+            showToast(`Selected: ${treatmentName}`);
+        }
+
+        // Handle Appointment Form Submission via WhatsApp
+        function handleAppointmentSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('patient-name').value.trim();
+            const phone = document.getElementById('patient-phone').value.trim();
+            const village = document.getElementById('patient-village').value.trim();
+            const date = document.getElementById('visit-date').value;
+            const time = document.getElementById('visit-time').value;
+            const treatment = document.getElementById('treatment-type').value;
+
+            const message = `*New Dental Appointment Request*%0A` +
+                            `----------------------------%0A` +
+                            `*Doctor:* Dr. MD Yousuf (Ratua - 732205)%0A` +
+                            `*Patient Name:* ${encodeURIComponent(name)}%0A` +
+                            `*Phone:* ${encodeURIComponent(phone)}%0A` +
+                            `*Address:* ${encodeURIComponent(village)}%0A` +
+                            `*Treatment:* ${encodeURIComponent(treatment)}%0A` +
+                            `*Preferred Date:* ${encodeURIComponent(date)}%0A` +
+                            `*Preferred Time:* ${encodeURIComponent(time)}`;
+
+            const whatsappURL = `https://wa.me/918910364043?text=${message}`;
+            window.open(whatsappURL, '_blank');
+            showToast('Opening WhatsApp to confirm booking...');
+        }
+
+        // Fallback SMS Booking for Android Phones without WhatsApp
+        function sendViaSMS() {
+            const name = document.getElementById('patient-name').value.trim() || 'Patient';
+            const date = document.getElementById('visit-date').value;
+            const time = document.getElementById('visit-time').value;
+            const treatment = document.getElementById('treatment-type').value;
+
+            const smsBody = encodeURIComponent(`Hello Dr. MD Yousuf, I want to book an appointment. Name: ${name}, Issue: ${treatment}, Date: ${date} (${time}) at Ratua 732205 clinic.`);
+            window.location.href = `sms:+918910364043?body=${smsBody}`;
+        }
+
+        // Copy Phone Number using execCommand for iframe compatibility
+        function copyPhoneNumber() {
+            const tempInput = document.createElement('input');
+            tempInput.value = '8910364043';
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast('Phone number 8910364043 copied!');
+        }
+
+        // Save Doctor's Contact as a vCard (.vcf) on Android / iOS
+        function downloadVCard() {
+            const vcardData = [
+                "BEGIN:VCARD",
+                "VERSION:3.0",
+                "FN:Dr. MD Yousuf (Dentist Ratua)",
+                "ORG:Dr. MD Yousuf Dental Care Clinic",
+                "TITLE:Dental Surgeon",
+                "TEL;TYPE=CELL,VOICE:+918910364043",
+                "ADR;TYPE=WORK:;;Ratua Main Market;Ratua;Malda;732205;India",
+                "NOTE:Dental Clinic in Ratua (PIN: 732205). Call 8910364043 for appointments.",
+                "END:VCARD"
+            ].join("\n");
+
+            const blob = new Blob([vcardData], { type: "text/vcard" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = "Dr_MD_Yousuf_Dentist_Ratua.vcf";
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            showToast('Contact card downloaded to your phone!');
+        }
+
+        // Toast Helper
+        function showToast(msg) {
+            const box = document.getElementById('toast-box');
+            const text = document.getElementById('toast-message');
+            text.textContent = msg;
+            box.classList.remove('hidden');
+            box.classList.add('flex');
+            setTimeout(() => {
+                box.classList.add('hidden');
+                box.classList.remove('flex');
+            }, 3200);
+        }
+
+        // Multi-language Support (English, Bengali, Hindi) for Local Patients in Ratua
+        const translations = {
+            en: {
+                top_location: "Ratua, Malda, WB - PIN: 732205",
+                clinic_subtitle: "Ratua Dental Care • 732205",
+                call_btn: "Call",
+                hero_title: 'Gentle, Modern & Affordable Dental Care in <span class="text-dental-600 underline decoration-dental-200 decoration-4 underline-offset-4">Ratua</span>',
+                hero_desc: "Consult <strong>Dr. MD Yousuf</strong> for painless tooth extractions, root canal treatments (RCT), teeth cleaning, braces, and complete family dental care right in the heart of Ratua (PIN: 732205).",
+                cta_call_now: "Call: 89103 64043",
+                cta_whatsapp: "Book on WhatsApp",
+                stat_hygiene: "Sterilized Tools",
+                stat_painless: "Modern Care",
+                stat_local: "Ratua Local Clinic",
+                doc_subtitle: "Family & Cosmetic Dentist • Ratua",
+                save_contact: "Save Doctor's Number to Phone",
+                symptom_title: "What Dental Problem Are You Facing?",
+                symptom_sub: "Tap on your symptom below to see how Dr. MD Yousuf can help you today.",
+                services_heading: "Complete Dental Care Under One Roof",
+                book_heading: "Book Your Appointment",
+                bottom_call: "Call Doctor",
+                bottom_map: "Ratua 732205"
+            },
+            bn: {
+                top_location: "রতুয়া, মালদা - পিন: ৭৩২২০৫",
+                clinic_subtitle: "রতুয়া ডেন্টাল কেয়ার • ৭৩২২০৫",
+                call_btn: "কল করুন",
+                hero_title: 'রতুয়ায় আধুনিক ও ব্যথাহীন <span class="text-dental-600">দাঁতের চিকিৎসা</span>',
+                hero_desc: "দাঁতের ব্যথা, রুট ক্যানেল (RCT), দাঁত বাঁধানো, স্কেলিং এবং মাড়ির যেকোনো সমস্যার জন্য রতুয়ায় (732205) যোগাযোগ করুন <strong>ডাঃ এমডি ইউসুফ</strong>-এর সাথে।",
+                cta_call_now: "কল করুন: 89103 64043",
+                cta_whatsapp: "হোয়াটসঅ্যাপ বুকিং",
+                stat_hygiene: "জীবাণুমুক্ত যন্ত্রপাতি",
+                stat_painless: "ব্যথাহীন চিকিৎসা",
+                stat_local: "রতুয়া ক্লিনিক",
+                doc_subtitle: "ডেন্টাল সার্জন • রতুয়া (৭৩২২০৫)",
+                save_contact: "ডাক্তারবাবুর নম্বর ফোনে সেভ করুন",
+                symptom_title: "আপনার দাঁতের কী সমস্যা হচ্ছে?",
+                symptom_sub: "নিচের অপশনে ট্যাপ করে জেনে নিন সঠিক চিকিৎসা।",
+                services_heading: "আমাদের দাঁতের চিকিৎসার পরিষেবাসমূহ",
+                book_heading: "অ্যাপয়েন্টমেন্ট বুক করুন",
+                bottom_call: "কল করুন",
+                bottom_map: "রতুয়া ৭৩২২০৫"
+            },
+            hi: {
+                top_location: "रतुआ, मालदा - पिन: 732205",
+                clinic_subtitle: "रतुआ डेंटल केयर • 732205",
+                call_btn: "कॉल करें",
+                hero_title: 'रतुआ में आधुनिक और दर्द रहित <span class="text-dental-600">दांतों का इलाज</span>',
+                hero_desc: "दांत दर्द, रूट कैनाल (RCT), दांतों की सफाई, कैप और मसूड़ों के संपूर्ण इलाज के लिए रतुआ (732205) में <strong>डॉ. एमडी यूसुफ</strong> से परामर्श लें।",
+                cta_call_now: "कॉल करें: 89103 64043",
+                cta_whatsapp: "व्हाट्सएप पर बुक करें",
+                stat_hygiene: "सुरक्षित एवं स्वच्छ",
+                stat_painless: "दर्द रहित इलाज",
+                stat_local: "रतुआ लोकल क्लिनिक",
+                doc_subtitle: "डेंटल सर्जन • रतुआ (732205)",
+                save_contact: "डॉक्टर का नंबर फोन में सेव करें",
+                symptom_title: "आपको दांतों में क्या समस्या है?",
+                symptom_sub: "नीचे अपने लक्षण पर टैप करें और तुरंत समाधान जानें।",
+                services_heading: "दांतों के सभी इलाज एक ही छत के नीचे",
+                book_heading: "अपना अपॉइंटमेंट बुक करें",
+                bottom_call: "कॉल करें",
+                bottom_map: "रतुआ 732205"
+            }
+        };
+
+        function setLanguage(lang) {
+            ['en', 'bn', 'hi'].forEach(l => {
+                const btn = document.getElementById('lang-' + l);
+                if (l === lang) {
+                    btn.className = "px-2 py-0.5 rounded-md text-xs font-semibold bg-white text-dental-900 transition";
+                } else {
+                    btn.className = "px-2 py-0.5 rounded-md text-xs font-semibold text-teal-100 hover:text-white transition";
+                }
+            });
+
+            const dict = translations[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key]) {
+                    el.innerHTML = dict[key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
